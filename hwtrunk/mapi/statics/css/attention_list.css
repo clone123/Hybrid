@@ -1,0 +1,153 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+
+#wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+/*    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none*/
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.dsb{
+    display: block;
+}
+.dsib{
+    display: inline-block;
+}
+.psr{
+    position: relative;
+}
+.psa{
+    position: absolute;
+}
+.w100{
+    width: 100%;
+}
+.w93{
+    width: 93%;
+    margin: 0 auto;
+}
+.mgb60{
+    margin-bottom: 1.5rem;
+}
+.c333{
+    color: #333;
+}
+.box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*相关列表*/
+.relative{width: 100%;}
+.rel_title{
+    font-size: 1.45rem;
+    color: #333;
+    font-weight: normal;
+}
+.rel_cont{
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+.rel_img{
+    width: 5.67rem;
+    height: 5.67rem;
+    margin-left: 1.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.rel_detail{
+    width: 65%;
+    padding-top: 0.8rem;
+    margin-left: 1.8rem;
+}
+.rel_detail p{
+    font-size: 1.54rem;
+    color: #000000;
+    overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+}
+.rel_sub{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size: 1.28rem;
+    color: #999999;
+    margin: 0.2rem 0.5rem auto auto;}
+.rel_a{
+    display: block;overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0.77rem 0;
+    background-color: #ffffff;
+}
+/*取消*/
+.add_a{
+    right: 26%;
+    z-index: 999;
+}
+.rel_but{
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: -1;
+    width: 7.67rem;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    background-color: #e02525;
+    color: #ffffff;
+    text-align: center;
+    line-height: 7rem;
+}
+.resultNo {
+    font-size: 18px;
+    text-align: center;
+    margin: 65px;
+}
+/*提示图片*/
+.body{position: relative;}
+.tishi{position: absolute; top: 50%; left: 0; margin-top: -14rem; width:100%; height:9.45rem;  }
+.tishi div{width:7.4rem; height:10.7rem; margin: 0 auto;}
+.tishi p{text-align: center; padding-top: 0.6rem;font-size: 1.25rem; color: #000000;}

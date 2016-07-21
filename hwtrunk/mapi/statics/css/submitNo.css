@@ -1,0 +1,128 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.dsb{
+    display: block;
+}
+.dsib{
+    display: inline-block;
+}
+.psr{
+    position: relative;
+}
+.psa{
+    position: absolute;
+}
+.w100{
+    width: 100%;
+}
+.w55{
+    width: 55.7%;
+    margin: 0 auto;
+}
+form{
+    margin-top: 2.07rem;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#333;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#333;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#333;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#333;
+}
+
+.mas::-webkit-input-placeholder { /* WebKit browsers */
+    color:#afafaf;
+}
+.mas:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#afafaf;
+}
+.mas::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#afafaf;
+}
+.mas:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#afafaf;
+}
+
+.number, .connect{
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #afafaf;
+    margin-bottom: 0.8rem;
+    margin-left: 2.37rem;
+    margin-right: 2.37rem;
+}
+.gz, .lx{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #333;
+}
+.submit{
+    border: 1px solid #e02525;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 2.66rem;
+    margin-left: 2.37rem;
+    margin-right: 2.37rem;
+}
+.tj{
+    /*padding: 0.8rem 0;*/
+    height: 3.8rem;
+    line-height: 3.8rem;
+    color: #e02525;
+    font-size: 1.5rem;
+}
+input[type="button"] {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/*验证码*/
+.connects{
+    border-bottom: 1px solid #afafaf;
+    display: inline-block;
+    padding: 0.8rem 0;
+    margin-left: 2.37rem;
+    /*margin-bottom: 0.5rem;*/
+}
+.w_l{width: 50%;float: left;}
+.w_r{width: 5.6rem;float: right;margin-right:2.37rem; margin-left: 0;}
+.cx{text-align: center;}
+.add_i{padding: 0 1.33rem;}
+.sub_w{width: 84%;}

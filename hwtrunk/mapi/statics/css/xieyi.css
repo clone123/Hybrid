@@ -1,0 +1,40 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+.wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.wrap p{
+    color: #333;
+}
+.wrap p{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.wrap h2{
+    color: #000;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+.sub_c{
+    text-indent: 2.4rem;
+}

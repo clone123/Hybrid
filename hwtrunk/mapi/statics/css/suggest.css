@@ -1,0 +1,131 @@
+body{
+    background-color: #fff;
+    position: relative;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+body,html{width:100%;height:100%; overflow:hidden;}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    background: url("../images/suggest.jpg") no-repeat top center;
+    -webkit-background-size:100% 100%;
+    -o-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.dsb{
+    display: block;
+}
+.dsib{
+    display: inline-block;
+}
+.psr{
+    position: relative;
+}
+.psa{
+    position: absolute;
+}
+.w100{
+    width: 100%;
+}
+.w55{
+    width: 68%;
+    margin: 0 auto;
+}
+form{
+    padding-top: 15rem;
+}
+.text{height: 11.5rem;}
+@media screen and (min-height:480px){
+    form{padding-top: 15rem;}
+    .text{height: 9.5rem;}
+}
+@media screen and (min-height:560px){
+    form{padding-top: 18rem;}
+    .text{height: 9.5rem;}
+}
+@media screen and (min-height:620px){
+    form{padding-top: 20rem;}
+    .text{height: 11.5rem;}
+}
+@media screen and (min-height:754px){
+    form{padding-top: 22rem;}
+    .text{height: 11.5rem;}
+}
+@media screen and (min-height:838px){
+    form{padding-top: 22rem;}
+    .text{height: 11.5rem;}
+}
+input,textarea{
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#333;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#333;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#333;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#333;
+}
+.number, .connect{
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 0.5rem;
+}
+.con_bot{border: none;}
+.gz, .lx{
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+}
+.submit{
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.tj{
+    padding: 0.8rem 0;
+    color: #333;
+    font-size: 1.45rem;
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#ededed));
+}
+.dsb_div{
+    position: relative;
+}
+.dsb_div span{
+    position: absolute;
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    left: 0;
+    top:0.7rem;
+}
+.dsb_div input,.dsb_div textarea{text-indent: 3.6rem;}

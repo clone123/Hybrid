@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate,no-siteapp">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="copyright" content="第一视频号外">
+    <title>号外文章详情</title>
+    <link rel="dns-prefetch" href="//haowai.v1.cn/">
+    <link rel="dns-prefetch" href="//api.myhaowai.com/">
+    <link rel="shortcut icon" href="/statics/images/hw_64.png" type="image/x-icon">
+    <link rel="stylesheet" href="/statics/css/reset.css"/>
+    <link rel="stylesheet" href="/statics/css/content.test.css"/>
+    <script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+    <div class="wrap">
+        <!--头部开始-->
+        <header>
+            <div class="header w93 mgb60 clearfix"> </div>
+        </header>
+        <!--头部结束-->
+
+        <!--文章开始-->
+        <article>
+            <div class="main w100 mgb60 psr clearfix">
+                <div class="main_txt w93"></div>
+            </div>
+        </article>
+        <!--文章结束-->
+
+        <!--相关文章开始-->
+        <div class="relative w93 mgb60 clearfix">
+        </div>
+        <!--相关文章结束-->
+
+        <!--评论开始-->
+        <div class="comment w100 clearfix">
+            <h2 class="com_title" style="display: none">全部评论</h2>
+        </div>
+        <!--评论结束-->
+    </div>
+</div>
+
+<!--收藏成功提示-->
+<div class="scMask psa clearfix" style="display: none">
+    <span class="scOk dsb"></span>
+    <span class="scTxt dsb">收藏成功</span>
+</div>
+
+<!--评论框-->
+<div class="tools w100 clearfix">
+    <ul>
+        <li class="writeCom"><span class="icon_pl dsib"></span>写评论</li>
+        <li class="share"><span class="icon_fx dsib"></span>分享</li>
+        <li class="collection"><span class="icon_sc dsib"></span>收藏</li><!--saved:已收藏状态-->
+    </ul>
+
+    <!--评论输入框-->
+    <div class="sCom w100 clearfix" style="display: none">
+        <input id="comment" class="comInp fl dsb" placeholder="请输入评论...">
+        <span class="sendCom fl dsb"> 发 表</span>
+    </div>
+
+    <!--分享提示-->
+    <div class="sharTip w100 clearfix" style="display: none;">
+        <!-- JiaThis Button BEGIN -->
+        <!--        <div class="jiathis_style_m"><div class="jiathis_style_32x32">
+                    <span class="jiathis_txt">分享到：</span>
+                    <a class="jiathis_button_qzone" onclick="jiathis_mh5.sendTo('qzone');" title="分享到QQ空间"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+                    <a class="jiathis_button_tsina" onclick="jiathis_mh5.sendTo('tsina');" title="分享到新浪微博"><span class="jiathis_txt jtico jtico_tsina"></span></a>
+                    <a class="jiathis_button_tqq" onclick="jiathis_mh5.sendTo('tqq');" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+                    <a class="jiathis_button_renren" onclick="jiathis_mh5.sendTo('renren');" title="分享到人人网"><span class="jiathis_txt jtico jtico_renren"></span></a>
+                    <a href="http://www.jiathis.com/share?url=http%3A%2F%2Fhaowai.v1.cn%2Fappsite_api%2Fhtml5%2Fget_page%3Fpage%3Dcontent%26aid%3D55&amp;title=%E5%8F%B7%E5%A4%96%E6%96%87%E7%AB%A0%E8%AF%A6%E6%83%85&amp;uid=1626433" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                </div></div>
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js" charset="utf-8"></script>-->
+        <!-- JiaThis Button END -->
+        <!--<div class="fuzhi" id="fzAdress">复制地址链接</div>-->
+    </div>
+
+</div>
+
+<script id="headerTpl" type="text/x-handlebars-template" async>
+    <h2 class="h_t">{{title}}</h2>
+    <div class="h_b">
+        <span>{{pubtime}}</span>
+        {{#if_even original}}
+        <span class="origin"></span>
+        {{else}}
+        <span class=""></span>
+        {{/if_even}}
+        <span class="h_name">{{author}}</span>
+        <a href="{{weixinUrl}}"><span>{{nickname}}</span></a>
+    </div>
+</script>
+<script id="relativeTpl" type="text/x-handlebars-template" async>
+    <h2 class="rel_title">相关文章</h2>
+    {{#each article_list}}
+    <div class="rel_cont clearfix">
+        <div class="rel_img fl"><a class="c333"  href="{{url}}"><img src="{{imgurl}}"  width="133" height="100" class="dsb w100" alt=""/></a></div>
+        <div class="rel_detail fr">
+            <p><a class="c333" href="{{url}}">{{title}}</a></p>
+            <div class="rel_sub">
+                <span class="dsib">{{nickname}}</span>
+                <span class="dsib">阅读{{readNum}}</span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+<script id="commentTpl" type="text/x-handlebars-template" async>
+    {{#each comment_list}}
+    <div class="com_cont w93 clearfix">
+        <div class="com_head fl">
+            <a href=""><img src="{{headpath}}" class="dsb w100" alt=""/></a>
+        </div>
+        <div class="com_detail fr">
+            <div class="com_sub w100 clearfix">
+                <span class="fl dsb">{{nickname}}</span>
+                <span class="fr dsb">{{createtime}}</span>
+            </div>
+            <p class="com_txt">{{content}}</p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="/statics/js/dist/v1.test.js?v=201512221038"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+﻿/* CSS Reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    list-style: none outside none;
+}
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px "微软雅黑", Arial, Tahoma, Helvetica, sans-serif;
+    color:#333;
+}
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 14px;
+}
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: "Courier New", Courier, monospace;
+}
+small {
+    font-size: 12px;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+    color:#1093ee;
+}
+abbr[title],
+acronym[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+q:before,
+q:after {
+    content: '';
+}
+legend {
+    color: #000;
+}
+fieldset,
+img {
+    border: 0 none;
+    height: auto !important;
+}
+img {
+    vertical-align: top;
+}
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    vertical-align: middle;
+    outline: 0;
+}
+input[type="button"] {
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    border: 0;
+    height: 1px;
+}
+i {
+    font-style: normal;
+}
+.clearfix:before,
+.clearfix:after {
+      content:"";
+      display:table;
+   }
+.clearfix:after {
+     clear:both;
+     overflow:hidden;
+   }
+.clearfix {
+     zoom:1; /* IE < 8 */
+  }

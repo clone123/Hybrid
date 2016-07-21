@@ -1,0 +1,90 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.dsb{
+    display: block;
+}
+.psr{
+    position: relative;
+}
+.psa{
+    position: absolute;
+}
+.w100{
+    width: 100%;
+}
+input{
+    border: none;
+    outline: none;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#999;
+}
+/*搜索框*/
+.search{
+    width: 92%;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    padding: 0 4%;
+    border-bottom: 1px solid #afafaf;
+}
+.searchBox{
+    width: 82%;
+    height: 2.075rem;
+    margin: 0.6rem auto;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.searchTxt{
+    width: 94%;
+    height: 2.075rem;
+    line-height: 2.075rem;
+    padding: 0 3%;
+    font-size: 1rem;
+}
+.searchIcon{
+    right: 3.4%;
+    top: 0.3rem;
+    width: 1.45rem;
+    height: 1.55rem;
+    background: url("../images/icons0.png") no-repeat;
+    background-size: 1.6rem 16.6rem;
+    background-position: 0 -7rem;
+}

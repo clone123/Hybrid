@@ -1,0 +1,138 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+#wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrap{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+/*    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none*/
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.dsb{
+    display: block;
+}
+.dsib{
+    display: inline-block;
+}
+.psr{
+    position: relative;
+}
+.psa{
+    position: absolute;
+}
+.w100{
+    width: 100%;
+}
+.w93{
+    width: 93%;
+    margin: 0 auto;
+}
+.mgb60{
+    margin-bottom: 1.5rem;
+}
+.c333{
+    color: #333;
+}
+.box{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*相关列表*/
+.relative{padding-top:0.515rem;width: 100%;}
+.rel_title{
+    font-size: 1.45rem;
+    color: #333;
+    font-weight: normal;
+}
+.rel_cont{
+    padding: 1rem 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.rel_img{
+    width: 4.12rem;
+    height: 4.12rem;
+    margin-left: 1.93rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.rel_h{
+    font-size: 1.56rem;
+    color: #000000;
+    padding-left: 1.288rem;
+    padding-top: 1rem;
+}
+.rel_ok,.rel_more{
+    background: url("../images/sort.png") no-repeat;
+    background-size: 1.8rem 3.73rem;
+}
+.rel_ok{
+    width: 1.82rem;
+    height: 1.4rem;
+    margin-top: 1.2rem;
+    margin-right: 1.65rem;
+    background-position: 0px 0px;
+}
+.rel_more{
+    width: 1.03rem;
+    height: 1.8rem;
+    margin-top: 1.2rem;
+    margin-right: 1.65rem;
+    background-position: 0 -1.96rem;
+}
+.rel_a{display: block;overflow: hidden;}
+
+.resultNo {
+    font-size: 18px;
+    text-align: center;
+    margin: 65px;
+}
+/*提示图片*/
+.body{position: relative;}
+.tishi{position: absolute; top: 50%; left: 0; margin-top: -14rem; width:100%; height:9.45rem;  }
+.tishi div{width:7.4rem; height:10.7rem; margin: 0 auto;}
+.tishi p{text-align: center; padding-top: 0.6rem;font-size: 1.25rem; color: #000000;}

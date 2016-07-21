@@ -1,0 +1,396 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+/*.wrap{
+    width: 100%;
+    margin: 0 auto;
+}*/
+
+#wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.wrap{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.dsb{
+    display: block;
+}
+.dsib{
+    display: inline-block;
+}
+.psr{
+    position: relative;
+}
+.psa{
+    position: absolute;
+}
+.w100{
+    width: 100%;
+}
+.w93{
+    width: 93%;
+    margin: 0 auto;
+}
+.mgb60{
+    margin-bottom: 1.5rem;
+}
+.c333{
+    color: #333;
+    font-size: 18px;
+}
+
+
+
+/*头部*/
+.header{
+    padding-top: 1.45rem;
+}
+.header h2{
+    color: #333;
+    font-size: 23px;
+    font-weight: normal;
+}
+.h_b{
+    margin-top: 0.8rem;
+}
+.h_b span{
+    display: inline-block;
+    color: #999;
+    font-size: 17px;
+}
+.h_b span.origin, .icon_pl, .icon_fx, .icon_sc, .scOk {
+    background: url("../images/icons.png") no-repeat;
+    background-size: 1.6rem 11.5rem;
+}
+.h_b span.origin {
+    margin: 0 0.75rem -0.2rem;
+    width: 2.4rem;
+    height: 1.5rem;
+    background-size: 2.5rem 19rem;
+    background-position: 0 -17.5rem;
+}
+.h_name{
+    margin-right: 1.3rem;
+}
+
+
+/*头部*/
+
+/*
+.topFixd{
+     position: fixed;
+     top : 0;
+     z-index: 100;
+}
+*/
+
+.topDown{
+    position: absolute;
+    z-index:9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*文章*/
+.main_txt{
+    font-size: 16px;
+    color: #333;
+    /*text-indent: 2.9rem;*/
+    overflow: hidden;
+}
+
+.main_txt * {
+    max-width: 100%!important;
+    box-sizing: border-box!important;
+    -webkit-box-sizing: border-box!important;
+    word-wrap: break-word!important
+}
+
+.main_txt p {
+    clear: both;
+    min-height: 1em;
+    white-space: pre-wrap
+}
+
+.main_txt em {
+    font-style: italic
+}
+
+.main_txt fieldset {
+    min-width: 0
+}
+
+
+/*.main_txt img{
+    word-break:break-word;
+    text-align: initial !important;
+    margin:0 auto !important;
+    display:block !important;
+    width:98% !important;
+}*/
+
+/*.main_txt img{
+      display: none;
+}*/
+
+.video_iframe{
+     display: none;
+}
+
+.main_txt video{
+    display:block !important;
+    width:100% !important;
+}
+
+.main_img{
+    padding: 1.5rem 0;
+}
+
+.rich_media_meta_list{
+     display: none;
+}
+
+.tools{
+    background-color: #f6f6f7;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10000;
+}
+.tools li{
+    padding: 0.75rem 0;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    color: #626262;
+    font-size: 1.5rem;
+}
+.share{
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+.icon_pl{
+    margin: 0 0.5rem -0.2rem 0;
+    width: 1.45rem;
+    height: 1.46rem;
+    background-position: 0 -1.7rem;
+}
+.icon_fx{
+    margin: 0 0.5rem -0.3rem 0;
+    width: 1.45rem;
+    height: 1.45rem;
+    background-position: 0 -3.1rem;
+}
+.icon_sc{
+    margin: 0 0.5rem -0.3rem 0;
+    width: 1.575rem;
+    height: 1.45rem;
+    background-position: 0 -4.6rem;
+}
+.saved{
+    background-position: 0 -9.18rem;
+}
+/*文章*/
+/*收藏成功提示*/
+.scMask{
+    position: fixed;
+    width: 7.5rem;
+    height: 7.5rem;
+    top: 20.25rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.alert{
+    position: fixed;
+    width: 11.5rem;
+    height: 7.5rem;
+    top: 20.25rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/*分享提示*/
+.sharTip {
+    padding: 0.5rem 0;
+    border: 1px solid #e1e1e1;
+}
+
+.jiathis_style_32x32 span{
+    margin-right: 2%;
+}
+
+.jiathis_style_32x32 .shar{
+    font-size: 1.1rem;
+    margin: 0 10% 0 3%;
+    line-height: 30px;
+    float: left;
+}
+
+/*评论框*/
+.sCom {
+    bottom: 3.2rem;
+    border: 1px solid #e1e1e1;
+}
+.comInp {
+    font-size: 100%;
+    vertical-align: middle;
+    width: 70%;
+    height: 3.5rem;
+    font-size: 2rem;
+    overflow: hidden;
+    padding: 0.5rem 1.6%;
+    border-right: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    resize: none;
+}
+.sendCom {
+    width: 25%;
+    height: 3.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    border-top: 1px solid #e1e1e1;
+}
+
+.scOk{
+    margin: 2.1rem auto 0.8rem 2.925rem;
+    width: 1.7rem;
+    height: 1.65rem;
+    background-position: 0 0;
+}
+
+.alertOk{
+    margin: 2.1rem auto -1.2rem 2.925rem;
+    width: 1.7rem;
+    height: 1.65rem;
+    background-position: 0 0;
+}
+
+.scTxt{
+    color: #fff;
+    font-size: 1.25rem;
+}
+/*收藏成功提示*/
+/*相关文章*/
+
+.relative{
+     margin-bottom: 80px;
+}
+
+.rel_title{
+    font-size: 19px;
+    color: #333;
+    font-weight: normal;
+}
+.rel_cont{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.rel_img{
+    width: 35%;
+    height: 70%;
+}
+.rel_detail{
+    width: 62%;
+}
+.rel_detail p{
+    font-size: 1.45rem;
+    color: #333;
+    margin-bottom: 1.3rem;
+}
+.rel_sub span{
+    font-size: 13px;
+    color: #999;
+    margin: 1.3rem 1.4rem auto auto;
+}
+
+.comment {
+     margin-bottom: 100px;
+     display: none;
+}
+/*评论*/
+.com_title{
+    font-size: 1.45rem;
+    color: #333;
+    font-weight: normal;
+    padding-left: 0.475rem;
+    border-left: 0.625rem solid #e02525;
+}
+.com_cont{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.com_head{
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.com_detail{
+    width: 86%;
+}
+.com_sub{
+    padding-bottom: 0.6rem;
+}
+.com_sub span{
+    font-size: 1.1rem;
+    color: #999;
+}
+.com_txt{
+    font-size: 1.25rem;
+    color: #333;
+}

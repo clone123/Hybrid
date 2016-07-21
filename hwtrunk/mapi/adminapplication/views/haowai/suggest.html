@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>意见</title>
+    <link rel="dns-prefetch" href="//haowai.v1.cn/">
+    <link rel="dns-prefetch" href="//api.myhaowai.com/">
+    <link rel="dns-prefetch" href="//img.haowai.v1.cn">
+    <link rel="stylesheet" href="/statics/css/reset.css"/>
+    <link rel="stylesheet" href="/statics/css/suggest.css?v=201603141344"/>
+    <script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <form action="" class="dsb">
+        <div class="number w55 dsb_div"><span>QQ：</span>
+            <input type="text" id="number" class="gz w100 dsb" />
+        </div>
+        <div class="connect con_bot dsb_div w55"><span>评价：</span>
+            <textarea class="lx text w100 dsb" id="content" ></textarea>
+        </div>
+        <div class="submit w55">
+            <input type="button" value="提交" id="sub" class="tj w100 dsb"/>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+      (function(){
+             "use strict";
+              var s = {
+                     init : function(){
+                          var _t = this ;
+                          _t.bindEvent();
+                     },
+                     bindEvent : function(){
+                           var _t = this ;
+                           $("#sub").click(function(){
+                                   if(!$("#number").val() && !$("#content").val()){
+                                          return alert('对不起，QQ或评价不能为空！')
+                                   };
+                                   _t.sendSuggest();
+                           });
+                     },
+                     sendSuggest : function(){
+                           var _t = this,dt ;
+                           dt =  {
+                               qq:$("#number").val(),
+                               content:$("#content").val()
+                           };
+                           $.ajax({
+                                 url:'/appsite_api/suggest/saveSuggest',
+                                 type:'post',
+                                 data:dt,
+                                 success:function(rel){
+                                     if(!rel) return false ;
+                                     var msg = JSON.parse(rel);
+                                     alert(msg['result']['message']);
+                                 },error:function(e){ console.log(e);}
+                           });
+                     }
+              }.init();
+      })();
+
+
+</script>
+
+</body>
+</html>

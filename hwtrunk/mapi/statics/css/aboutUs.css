@@ -1,0 +1,47 @@
+body{
+    background-color: #fff;
+}
+html{font-size: 62.5%}
+@media screen and (min-width:375px){
+    html{font-size:73.24%}
+}
+@media screen and (min-width:414px){
+    html{font-size:80.86%}
+}
+@media screen and (min-width:481px){
+    html{font-size:94%}
+}
+@media screen and (min-width:561px){
+    html{font-size:109%}
+}
+@media screen and (min-width:641px){
+    html{font-size:125%}
+}
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.dsb{
+    display: block;
+}
+.w100{
+    width: 100%;
+}
+.logo{
+    width: 21%;
+    margin: 3rem auto 3.1rem;
+}
+p{
+    font-size: 1.25rem;
+    color: #333;
+    text-align: left;
+    line-height: 1.8rem;
+}
+.content{
+    width: 83%;
+    margin: 0 auto;
+    text-indent: 2.45rem;
+}
+.connect{
+    padding-left: 16%;
+}

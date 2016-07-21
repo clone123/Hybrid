@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="max-age=300">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="copyright" content="第一视频号外">
+    <title>提交公众号</title>
+    <link rel="dns-prefetch" href="//haowai.v1.cn/">
+    <link rel="stylesheet" href="/statics/css/reset.css?v=201603031005"/>
+    <link rel="stylesheet" href="/statics/css/common.css?v=201603031005"/>
+    <link rel="stylesheet" href="/statics/css/submitNo.css?v=201603031005"/>
+    <script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <form action=""  method="post" class="dsb" autocomplete="on">
+        <div class="number">
+            <input type="text" id="weixin"  name="weixin" onpaste="return false;" class="gz w100 dsb"  placeholder="公众号" required />
+        </div>
+        <div class="connect">
+            <input type="tel" id="tel" name="tel" onpaste="return false;"  class="lx w100 dsb" pattern="[\d]{6,}"  autocomplete="on" placeholder="联系方式" required />
+        </div>
+        <!--验证码-->
+        <div class="clearfix">
+            <div class="connects w_l">
+                <input type="tel" id="randCode" class="lx w100 dsb mas" placeholder="请输入验证码"/>
+            </div>
+            <div class="connects w_r">
+                <label class="lx cx dsb" id="code"></label>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="button" id="subNo" value="提 交"  class="tj w100 dsb"/>
+        </div>
+    </form>
+</div>
+
+
+<script type="text/javascript" src="/statics/js/dist/v1.submitNo.js?v=201603031005"></script>
+</body>
+</html>

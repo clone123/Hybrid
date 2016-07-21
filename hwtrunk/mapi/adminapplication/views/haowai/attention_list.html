@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>关注列表</title>
+    <link rel="stylesheet" href="/statics/css/reset.css?v=201603031005"/>
+    <link rel="stylesheet" href="/statics/css/common.css?v=201603031005"/>
+    <link rel="stylesheet" href="/statics/css/attention_list.css?v=201603031005"/>
+    <script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div class="wrap">
+        <div class="relative mgb60 clearfix box"></div>
+
+    </div>
+    <!--提示图片-->
+    <div class="tishi" style="display: none;">
+        <div><img class="w100" src="/statics/images/tishi.png"></div>
+        <p class="tip">没有搜到相关内容~</p>
+    </div>
+</div>
+
+<!--头部模板-->
+<script id="topTpl" type="text/x-handlebars-template">
+    {{#each list}}
+        <div class="rel_cont clearfix box">
+            <a class="rel_a" href="/appsite_api/html5/get_page?page=userCenter&weixin={{weixin}}&newSource=1" style="right:0px;">
+                <div class="rel_img fl"><img src="{{avatar}}" class="dsb w100" alt=""/></div>
+                <div class="rel_detail fl box">
+                    <p>{{nickname}}</p>
+                    <div class="rel_sub">{{desc}}</div>
+                </div>
+            </a>
+            <div class="rel_but fr" weixin="{{weixin}}" style="display:none">取消</div>
+        </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="/statics/js/dist/v1.watchList.js?v=201603101401"></script>
+</body>
+</html>

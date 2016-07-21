@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>排行-切换</title>
+    <link rel="dns-prefetch" href="//haowai.v1.cn/">
+    <link rel="dns-prefetch" href="//api.myhaowai.com/">
+    <link rel="dns-prefetch" href="//img.haowai.v1.cn">
+    <link rel="stylesheet" href="/statics/css/reset.css?v=201603101553"/>
+    <link rel="stylesheet" href="/statics/css/common.css?v=201603101553"/>
+    <link rel="stylesheet" href="/statics/css/sort_switch.css?v=201603101553"/>
+    <script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div class="wrap">
+        <div class="relative mgb60 clearfix box"></div>
+    </div>
+    <!--提示图片-->
+    <div class="tishi" style="display: none;">
+        <div><img class="w100" src="/statics/images/tishi.png"></div>
+        <p class="tip">没有搜到相关内容~</p>
+    </div>
+</div>
+
+<!--头部模板-->
+<script id="topTpl" type="text/x-handlebars-template">
+    {{#each category_list}}
+     <div class="rel_cont clearfix box" id="cg_{{typeid}}" cateid="{{typeid}}" catename="{{category_name}}">
+            <a class="rel_a" href="javascript:void(0);">
+                <div class="rel_img fl"><img src="{{imgurl}}?v=1" class="dsb w100" alt=""/></div>
+                <div class="rel_h fl">{{category_name}}</div>
+                <div class="rel_more fr box"></div>
+            </a>
+     </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="/statics/js/dist/v1.rankList.js?v=201603101435"></script>
+</body>
+</html>

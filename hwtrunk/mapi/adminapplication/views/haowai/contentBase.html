@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>内容页</title>
+    <link rel="stylesheet" href="/statics/css/reset.css"/>
+    <link rel="stylesheet" href="/statics/css/content.css"/>
+</head>
+<body>
+<div class="wrap">
+    <!--头部开始-->
+    <div class="header w93 mgb60 clearfix"> </div>
+    <!--头部结束-->
+
+    <!--文章开始-->
+    <div class="main w100 mgb60 psr clearfix"></div>
+    <!--文章结束-->
+
+    <!--相关文章开始-->
+    <div class="relative w93 mgb60 clearfix">
+           <h2 class="rel_title">相关文章</h2>
+    </div>
+    <!--相关文章结束-->
+
+    <!--评论开始-->
+    <div class="comment w100 clearfix">
+         <h2 class="com_title">全部评论</h2>
+    </div>
+    <!--评论结束-->
+</div>
+<script id="headerTpl" type="text/x-handlebars-template">
+    <h2 class="h_t">进口工具检测杜绝事故车进原厂质保更安全</h2>
+    <div class="h_b">
+        <span>2015-11-23</span>
+        <span class="origin"></span>
+        <span class="h_name">吉和奔跑的鲸</span>
+        <span>北青影像</span>
+    </div>
+</script>
+<script id="mainTpl" type="text/x-handlebars-template">
+    <p class="main_txt w93"><a href="#" class="c333">这两天，“被长矛刺进嘴里的瞬间开枪击毙暴恐分子”的武警英雄火了。</a></p>
+    <div class="main_img w93"><a href="#"><img src="images/cont1.jpg" class="dsb w100" alt=""/></a></div>
+    <div class="tools w100 clearfix">
+        <ul>
+            <li class="writeCom"><span class="icon_pl dsib"></span>写评论</li>
+            <li class="share"><span class="icon_fx dsib"></span>分享</li>
+            <li class="collection"><span class="icon_sc dsib"></span>收藏</li><!--saved:已收藏状态-->
+        </ul>
+    </div>
+</script>
+<script id="relativeTpl" type="text/x-handlebars-template">
+    <div class="rel_cont clearfix">
+        <div class="rel_img fl"><img src="images/cont2.jpg" class="dsb w100" alt=""/></div>
+        <div class="rel_detail fr">
+            <p><a class="c333">中国黑户人口超1300万 公安部高层议对策</a></p>
+            <div class="rel_sub">
+                <span class="dsib">吉和奔跑的鲸</span>
+                <span class="dsib">阅读4832</span>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="commentTpl" type="text/x-handlebars-template">
+    <div class="com_cont w93 clearfix">
+        <div class="com_head fl">
+            <a href="#"><img src="images/head.jpg" class="dsb w100" alt=""/></a>
+        </div>
+        <div class="com_detail fr">
+            <div class="com_sub w100 clearfix">
+                <span class="fl dsb">哆来咪</span>
+                <span class="fr dsb">11-23</span>
+            </div>
+            <p class="com_txt">哆来咪发嗖拉西哆来咪发嗖拉西哆来咪发嗖拉西</p>
+        </div>
+    </div>
+</script>
+<script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+<script type="text/javascript" src="/statics/js/lib/sea.js"></script>
+<script>
+    seajs.use('/statics/content',function(c){
+              window['con'] = c.init();
+    });
+</script>
+</body>
+</html>

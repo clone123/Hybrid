@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate,no-siteapp">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="copyright" content="第一视频号外">
+    <title>号外文章详情</title>
+    <link rel="dns-prefetch" href="//haowai.v1.cn/">
+    <link rel="dns-prefetch" href="//api.myhaowai.com/">
+    <link rel="dns-prefetch" href="//img.haowai.v1.cn">
+    <link rel="shortcut icon" href="/statics/images/hw_64.png" type="image/x-icon">
+    <link rel="stylesheet" href="/statics/css/reset.css?v=201603101435"/>
+    <link rel="stylesheet" href="/statics/css/content.css?v=201603101435"/>
+    <link rel="stylesheet" href="/statics/css/common.css?v=201603101435"/>
+    <link rel="stylesheet" href="/statics/css/video-js.css?v=201603101435" >
+    <!--<link rel="stylesheet" href="/statics/css/ps.test.css?v=201603031005" >-->
+<!--    <link rel="stylesheet" href="/statics/css/photoSwipe/photoswipe.css?v=201603101435" >
+    <link rel="stylesheet" href="/statics/css/photoSwipe/default-skin/default-skin.css?v=201603101435" >-->
+    <script type="text/javascript" src="/statics/js/lib/zepto.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+<div class="wrap">
+    <!--头部开始-->
+    <header>
+       <div class="header w93 mgb60 clearfix"> </div>
+    </header>
+    <!--头部结束-->
+
+    <!--文章开始-->
+    <article>
+        <div class="main w100 mgb60 psr clearfix">
+            <div class="main_txt w93"></div>
+            <div class="reader w93 clearfix" style="display: none"><a href="#">阅读原文</a> </div>
+        </div>
+    </article>
+    <!--文章结束-->
+
+    <!--相关文章开始-->
+    <div class="relative w93 mgb60 clearfix">
+
+    </div>
+    <!--相关文章结束-->
+
+    <!--评论开始-->
+    <div class="comment w100 clearfix">
+        <h2 class="com_title" style="display: none">全部评论</h2>
+    </div>
+    <!--评论结束-->
+</div>
+</div>
+
+<!--收藏成功提示-->
+<div class="scMask psa clearfix" style="display: none">
+    <span class="scOk dsb"></span>
+    <span class="scTxt dsb">收藏成功</span>
+</div>
+
+<!--黑色图层-->
+<div class="blank"></div>
+
+<!--评论框-->
+<div class="tools w100 clearfix">
+    <ul>
+        <li class="writeCom"><span class="icon_pl icon_pls dsib"></span></li>
+        <li class="share"><span class="icon_fx icon_fxs dsib"></span></li>
+        <li class="collection"><span class="icon_sc icon_scs dsib"></span></li><!--saved:已收藏状态-->
+        <li class="clickLike"><span class="icon_cl icon_cls dsib"></span>&nbsp;<em id="clickNum">0</em></li>
+    </ul>
+    <!--评论输入框-->
+    <div class="sCom w100 clearfix" style="display: none;">
+        <div class="scom_div"><input id="comment" class="comInp dsb" placeholder="写评论...">
+        <span class="sendCom dsb"> 发布</span> </div>
+    </div>
+
+    <!--分享提示-->
+    <div class="sharTip w100 clearfix" style="display: none;"></div>
+
+</div>
+<!--加载-->
+<div class="load_div"><div><img src="/statics/images/load.gif" class="dsb w100" alt=""/></div></div>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div id="photoImg" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter" style="font-size: 1.25rem;"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button style="margin-left: 177px;margin-top: 10px;border: none;background: none;color: #ffffff;font-size: 1.25rem;position:relative;z-index: 100000;" title="Share" class="save" id="save">保存</button>
+       <!--         <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>-->
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script id="headerTpl" type="text/x-handlebars-template" async>
+    <h2 class="h_t">{{title}}</h2>
+    <div class="h_b">
+        <span>{{pubtime}}</span>
+        {{#if_even original}}
+           <span class="origin"></span>
+        {{else}}
+            <span class=""></span>
+        {{/if_even}}
+        <span class="h_name">{{author}}</span>
+        <a href="{{weixinUrl}}"><span>{{nickname}}</span></a>
+    </div>
+</script>
+<script id="relativeTpl" type="text/x-handlebars-template" async>
+     <h2 class="rel_title">相关文章</h2>
+     {{#each article_list}}
+      <div class="rel_cont clearfix">
+            <div class="rel_img fl">
+                <a class="c333" style="display:block;background: url({{imgurl}}) no-repeat center center;background-size:cover;width:100%;height: 100px;margin:0 auto;"  href="{{url}}"></a>
+            </div>
+
+            <div class="rel_detail fr">
+                <a href="{{url}}">
+                    <p>{{title}}</p>
+                    <div class="rel_sub">
+                        <span class="dsib">{{nickname}}</span>
+                        <span class="dsib">阅读{{readNum}}</span>
+                    </div>
+                </a>
+            </div>
+       </div>
+    {{/each}}
+
+</script>
+<script id="commentTpl" type="text/x-handlebars-template" async>
+    {{#each comment_list}}
+    <div class="com_cont w93 clearfix">
+        <div class="com_head fl">
+            <a href=""><img src="{{headpath}}" class="dsb w100" alt=""/></a>
+        </div>
+        <div class="com_detail fr">
+            <div class="com_sub w100 clearfix">
+                <span class="fl dsb">{{nickname}}</span>
+                <span class="fr dsb">{{createtime}}</span>
+            </div>
+            <p class="com_txt">{{content}}</p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/javascript" src="/statics/js/utils/video.min.js?v=201603101553"></script>
+<script type="text/javascript" src="/statics/js/dist/v1.contentManager.js?v=201603141401"></script>
+</body>
+</html>

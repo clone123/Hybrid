@@ -1,0 +1,92 @@
+
+.layerWap{ border-radius:6px; overflow:hidden;}
+.layerWap  h2{}
+.layerWap  h3{text-align: center;  font-size: 16px;    font-weight: normal;  margin-bottom: 15px;}
+.layerWap.layerA{ background: rgba(255,255,255,.9); padding-bottom:15px; padding-top: 15px; padding-bottom: 1.071rem; padding-top: 1.071rem;}
+.layerWap.layerA h2{ text-align:center; color:#505050; font-size:16px; padding: 0px 0 15px 0; font-weight: normal; line-height: 30px; line-height: 2.14rem; font-size: 1.142rem;}
+.layerWap.layerA .layerCon{ font-size:14px; font-size: 1.3rem;text-align: center}
+.layerWap.layerA .layerCon label{  display:block; height: 47px;line-height: 47px;  line-height: 3.35rem; height: 3.35rem;text-align:left; padding:0 20px;  padding: 0 1.42rem;  font-weight: normal;  border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; margin-top: -1px; font-size: 14px;  font-size: 1.3rem; position: relative; }
+.layerWap.layerA .layerCon label.active{background:#EFEFEF;}
+.layerWap.layerA .layerCon label input{ float:right; margin:  0; top: 50%; position: absolute; right: 1.3rem; margin-top: -5px;}
+.layerWap.layerA .layerBtn{ padding:15px 0 0 0; padding: 1.071rem 0 0 0; text-align:center;}
+.layerWap.layerA .layerBtn input{ width:30%; height:40px;-webkit-appearance: none;appearance: none;outline:none; text-align:center; line-height:40px; height: 2.8571rem; line-height: 2.8571rem; color:#333; font-size:14px; border-radius:6px; border:1px solid #D3D3D3; background:#faf9f9; font-family:"微软雅黑"; font-size:16px; font-size: 1.3rem; border-radius: 4px;
+     }
+
+.layerWap.layerB{ background: rgba(255,255,255,.9); padding-bottom:15px; padding-bottom: 1.071rem; padding-bottom: 1.071rem; border-radius: 0.57142rem; padding-top: 1.071rem;width:90%;}
+.layerWap.layerB h2{ text-align:center; color:#505050; font-size:16px; padding: 12px 0; text-align: center;  color: #505050;  font-size: 16px;  padding: 0px 0 15px 0;  font-weight: normal;  line-height: 30px;  line-height: 2.14rem;  font-size: 1.142rem;}
+.layerWap.layerB .layerCon{ font-size: 16px; font-size: 1rem; font-weight: normal; text-align: center; /* margin: 0 0 10px 0; */}
+.layerWap.layerB .layerCon p{ font-weight:normal; font-size: 16px; font-size: 1.3rem; text-align: center; margin: 5px 0; margin: 0.357rem 0; padding: 0 1rem;}
+.layerWap.layerB .layerCon section h4{ height:26px; line-height:26px; padding-left:10px; font-size:14px; background:#f1f1f1; border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;}
+.layerWap.layerB .layerCon section:first-child p{ text-align:left; padding:10px;}
+.layerWap.layerB .layerCon section:first-child p input{ width:29%; height:42px; line-height:42px; border-radius:12px; text-align:center; border:1px solid #b1b1b1; color:#252525; background:#faf9f9; margin:5px; font-family:"微软雅黑"; font-size:14px; font-weight:bold;}
+.layerWap.layerB .layerCon section:last-child p label{ display:block; height:42px; line-height:42px; font-size:14px;padding:0 20px; border-bottom:1px solid #cbcaca;}
+.layerWap.layerB .layerCon section:last-child p input{float:right; border-radius:12px; text-align:center; border:1px solid #b1b1b1; color:#252525; background:#faf9f9; margin:5px; margin-top:15px; font-family:"微软雅黑"; font-size:14px; font-weight:bold;}
+.layerWap.layerB .layerBtn{ text-align:center; padding:15px 0;}
+.layerWap.layerB .layerBtn input{ text-align:center; border:0; width:42%;-webkit-appearance: none;appearance: none;outline:none; display:inline-block; height:46px; line-height:46px; height: 3.285rem; line-height: 3.285rem; background: #FAF9F9; font-size:14px; font-family:"微软雅黑"; border-radius: 4px; border:1px solid #cecece; margin:0 5px; margin: 0 0.357rem; font-weight: normal; font-size: 1.3rem;}
+.layerWap.layerB .layerCon section:first-child input.cur{ background:#f3fafa; border:1px solid #28c0c6; color:#51ccd1;}
+.layerWap.layerB .layerBtn input:last-child{ background: #FAF9F9;}
+/*红框*/
+.layerWap.layerB .layerBtn input.color_red{color: #e02525;border: 1px solid #e02525;}
+
+.Qdaskbg{ background:#000; opacity:.5; position:fixed; left:0px; top:0px; width:100%; height:100%; z-index:1;}
+
+.layerWap.layerC{ background:rgba(255,255,255,.9); padding-bottom:15px;}
+.layerWap.layerC h2{ text-align:center; color:#505050; font-size:16px; padding:25px 0 20px 0;}
+.layerWap.layerC .layerCon{ font-weight:bold;}
+.layerWap.layerC .layerCon section h4{ height:26px; line-height:26px; padding-left:10px; font-size:14px; background:#f1f1f1; border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2;}
+.layerWap.layerC .layerCon section:first-child p{ text-align:left; padding:10px;}
+.layerWap.layerC .layerCon section:first-child p input{ width:29%; height:42px; line-height:42px; border-radius:12px; text-align:center; border:1px solid #b1b1b1; color:#252525; background:#faf9f9; margin:5px; font-family:"微软雅黑"; font-size:14px; font-weight:bold;}
+.layerWap.layerC .layerCon section:last-child p label{ display:block; height:42px; line-height:42px; font-size:14px;padding:0 20px; border-bottom:1px solid #cbcaca;}
+.layerWap.layerC .layerCon section:last-child p input{float:right; border-radius:12px; text-align:center; border:1px solid #b1b1b1; color:#252525; background:#faf9f9; margin:5px; margin-top:15px; font-family:"微软雅黑"; font-size:14px; font-weight:bold;}
+.layerWap.layerC .layerBtn{ text-align:center; background:#fff; padding:15px 0;}
+.layerWap.layerC .layerBtn input{ text-align:center; border:0; width:42%; display:inline-block; height:46px; line-height:46px; background:#f7f7f7; font-size:14px; font-family:"微软雅黑"; border-radius:10px; border:1px solid #cecece; margin:0 5px; font-weight:bold;}
+.layerWap.layerC .layerCon section:first-child input.cur{ background:#f3fafa; border:1px solid #28c0c6; color:#51ccd1;}
+.layerWap.layerC .layerBtn input:last-child{ background:#ebeaea;}
+
+.layerWap.layerD{ background:rgba(255,255,255,.9); padding-bottom:15px;}
+.layerWap.layerD h2{ text-align:center; color:#505050; font-size:16px; padding:25px 0 20px 0; font-size: 1rem; /* padding: 1.78571rem 0 1rem 0; */}
+.layerWap.layerD .layerCon{}
+.layerWap.layerD .layerCon section:first-child{ text-align:center;}
+.layerWap.layerD .layerCon section:first-child input{ width: 46%; height:42px; line-height:42px; height: 1.9rem; border-radius:12px; border-radius: 0.3rem; line-height: 1.8rem; text-align:center; border:1px solid #b1b1b1; color:#252525; background:#faf9f9; margin:5px; font-family:"微软雅黑"; font-size:14px; margin: 0; float: left; margin: 0.2rem 2%; font-size: 0.87rem;  overflow : hidden; height: 2rem;}
+.layerWap.layerD .layerCon section:first-child.changePlayType input{width:29%;}
+.layerWap.layerD .layerCon section:first-child input.cur{ background:#f3fafa; border:1px solid #28c0c6; color:#51ccd1;}
+.layerWap.layerD .layerCon section:last-child{ /* padding:25px 0 10px 0; */  text-align:center; font-size:14px; /*padding: 0 1rem;*/}
+.layerWap.layerD .layerCon section:last-child label{ display:inline-block; width:28%; text-align:left; line-height:34px; height:34px; white-space:nowrap; overflow:hidden;}
+.layerWap.layerD .layerBtn{ text-align:center; padding:15px 0; clear: both;}
+.layerWap.layerD .layerBtn input{
+    text-align: center;  border: 0;  width: 42%;  display: inline-block;  height: 46px;  line-height: 46px;
+    height: 2.8571rem;
+    line-height: 2.8571rem;  background: #FAF9F9;  font-size: 14px;  font-family: "微软雅黑";  border-radius: 10px;  border: 1px solid #cecece;  margin: 0 5px;  margin: 0 0.357rem;  font-weight: normal;  font-size: 1rem;
+}
+.layerWap.layerD .layerCon section:first-child input.cur{ background:#f3fafa; border:1px solid #28c0c6; color:#51ccd1;}
+.layerWap.layerD .layerBtn input:last-child{ background: #faf9f9;}
+
+/*********2014-10-14弹层新添加样式*********************/
+.layerWaps.layerD{ background: rgba(255,255,255,.9); padding-bottom: 1.071428rem;}
+.layerWaps.layerD h2{ text-align:center; color:#505050; font-size:16px; padding:25px 0 20px 0; font-weight: normal; font-size: 1rem;}
+.layerWaps.layerD .layerCon{
+}
+.layerWaps.layerD .layerCon section:first-child{ text-align:center;}
+.layerWaps.layerD .layerCon section:first-child input{ width:30%; height:42px; line-height:42px; border-radius: 0.3rem; text-align:center; border:1px solid #b1b1b1; color:#252525; background:#faf9f9; margin:5px; margin: 0.2rem; font-family:"微软雅黑"; font-size:14px; font-size: 1rem; height: 2rem; line-height: 2rem;}
+.layerWaps.layerD .layerCon section:first-child input.cur{ background:#f3fafa; border:1px solid #28c0c6; color:#51ccd1;}
+.layerWaps.layerD .layerCon section:last-child{ padding:25px 0 10px 18px; padding: 1rem; font-size:14px; /* width: 21rem; */}
+.layerWaps.layerD .layerCon section:last-child label{ display:inline-block; width:33%; white-space:nowrap; overflow:hidden; font-weight: normal; font-size: 0.7rem; width: 33%; /* float: left; */ }
+.layerWaps.layerD .layerBtn{ text-align:center; clear: both;}
+.layerWaps.layerD .layerBtn input{ text-align:center; border:0; width:42%; display:inline-block; height:46px; line-height:3rem; background:#f7f7f7; font-size:14px; font-family:"微软雅黑"; border-radius:10px; border:1px solid #cecece; margin:0 5px; height: 3rem; font-size: 1rem;}
+.layerWaps.layerD .layerCon section:first-child input.cur{ background:#f3fafa; border:1px solid #28c0c6; color:#51ccd1;}
+.layerWaps.layerD .layerBtn input:last-child{ background: #f7f7f7;}
+
+@media screen and (min-width:240px){.layerWap{width:190px;}}
+@media screen and (min-width:320px){.layerWap{width:256px;}}
+@media screen and (min-width:380px){.layerWap{width:304px;}}
+@media screen and (min-width:420px){.layerWap{width:336px;}}
+@media screen and (min-width:600px){.layerWap{width:460px;}}
+@media screen and (min-width:480px){.layerWap{width:384px;}}
+@media screen and (min-width:540px){.layerWap{width:432px;}}
+@media screen and (min-width:600px){.layerWap{width:480px;}}
+@media screen and (min-width:640px){.layerWap{width:512px;}}
+@media screen and (min-width:720px){.layerWap{width:576px;}}
+@media screen and (min-width:800px){.layerWap{width:640px;}}
+@media screen and (min-width:880px){.layerWap{width:704px;}}
+@media screen and (min-width:960px){.layerWap{width:768px;}}
+
